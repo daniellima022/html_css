@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TD, TR, TH
+            TBODY
+                TD, TR, TH
+            TFOOT
+                TD, TR, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>84.352.743</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum ab labore eum ipsa nemo eveniet quis? Non odio qui iusto porro aliquid deleniti laboriosam nisi labore! Laborum, impedit odio.Ex vero molestiae molestias odit tempora neque delectus animi et commodi aut. Magni optio, qui et laudantium ut quia a tempora, illum itaque eveniet saepe dolorem debitis consequatur sunt voluptatem.Ut odit est nam vel minus quae hic error! Debitis cupiditate ullam blanditiis adipisci voluptatem quae saepe ab deserunt harum iste. Quod porro architecto omnis. Tempora velit fuga fugit magni.Ipsa impedit eligendi quisquam consequatur obcaecati eius tempore, earum alias minima sapiente repudiandae accusantium nam perspiciatis. Aliquid ea est perferendis minus consequatur recusandae ipsa quos, unde ipsum incidunt libero. Labore?Odio voluptatibus quia impedit! Officiis in soluta doloremque expedita est vel inventore nisi, dolorem quam impedit. Quam, nulla? Esse assumenda adipisci porro repudiandae quae tempora, fuga cupiditate nulla ab beatae!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur ad amet saepe cum quia quod ex? Suscipit ipsum iusto atque recusandae possimus adipisci distinctio, pariatur amet blanditiis temporibus. Itaque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium provident sequi quidem, veniam in maiores iure doloremque, commodi error eos, maxime non pariatur aliquam? Fugiat sequi magni expedita qui vel? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos rerum nisi repellendus? Consectetur, eaque in tempore quae expedita saepe harum libero consequatur laudantium delectus. Sunt recusandae aliquam similique. Dignissimos, totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur possimus sapiente reiciendis rerum! Necessitatibus sit voluptates rerum iure sint doloribus eligendi reiciendis, aut nostrum eum ducimus recusandae? Harum, obcaecati aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique labore dignissimos reprehenderit autem quo enim inventore ullam hic, doloribus voluptatem aliquam ad, eveniet atque. Deserunt ut voluptate repudiandae vel dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro odit officia sequi autem recusandae accusamus consequuntur fugit delectus laboriosam dicta. Corrupti, sed magnam! Libero ex et, consequatur voluptatibus recusandae repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque quos natus quasi saepe consequuntur quo cupiditate laboriosam vel, est amet quidem minus excepturi temporibus dolor eius optio quod iure!</p>
+</body>
+</html>
